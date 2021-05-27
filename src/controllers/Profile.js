@@ -1,7 +1,9 @@
+const ProfileData = require("../model/Profile")
+
 module.exports = {
     index(request, response){
         //     response.sendFile(basePath + "/index.html")
-        return response.render("profile", {profile: Profile.data})
+        return response.render("profile", {profile: ProfileData.get()})
     },
     update(request, response){
         const data = request.body
@@ -14,11 +16,11 @@ module.exports = {
 
         const hourValue = data["monthly-budget"] / monthlyTotalHours
 
-        Profile.data = {
-            ...Profile.data,
+        ProfileData.update({
+            ...ProfileData.get(),
             ...request.body,
             hourValue
-        }
+        })
         return response.redirect("/profile")
     }
 }
