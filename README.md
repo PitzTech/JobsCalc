@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a target="_blank" href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
@@ -39,14 +39,14 @@ O JobsCalc é uma aplicação de estimativa de cálculo para projetos freelancer
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/s4fytPFbDiSkv4GPSfKaLE/Jobs-Planning){:target="_blank"}. É necessário ter conta no [Figma](https://figma.com){:target="_blank"} para acessá-lo.
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/s4fytPFbDiSkv4GPSfKaLE/Jobs-Planning). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.md){:target="_blank"} para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.md) para mais detalhes.
 
 ---
 
-Feito com ♥ by PitzTech com a tutoria de [Mayk Brito](https://github.com/maykbrito){:target="_blank"} e [Jakeliny Gracielly](https://github.com/jakeliny){:target="_blank"} :wave:
+Feito com ♥ by PitzTech com a tutoria de [Mayk Brito](https://github.com/maykbrito) e [Jakeliny Gracielly](https://github.com/jakeliny) :wave:
 
-<sup>Apoio da [Rocketseat](https://discord.com/invite/gCRAFhc){:target="_blank" rel="noopener"}</sup>
+<sup>Apoio da [Rocketseat](https://discord.com/invite/gCRAFhc)</sup>
