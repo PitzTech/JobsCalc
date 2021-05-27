@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a target="_blank" href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
@@ -49,4 +49,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.
 
 Feito com ♥ by PitzTech com a tutoria de [Mayk Brito](https://github.com/maykbrito) e [Jakeliny Gracielly](https://github.com/jakeliny) :wave:
 
-<sup>Apoio da [Rocketseat](https://discord.com/invite/gCRAFhc)</sup>
+<sup>Apoio da [Rocketseat](https://discord.com/invite/gCRAFhc) <a href="https://discord.com/invite/gCRAFhc" target="_blank">Rocketseat</a></sup>
