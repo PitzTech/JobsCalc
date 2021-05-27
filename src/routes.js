@@ -1,9 +1,6 @@
 const express = require("express")
 const routes = express.Router()
 
-// EJS already uses __dirname + "/views"  as basePath
-const views = __dirname + "/views/" 
-
 const Profile = {
     data: {
         name: "PitzTech",
@@ -14,30 +11,6 @@ const Profile = {
         "vacation-per-year": 4,
         hourValue: 30
     },
-    controllers:{
-        index(request, response){
-            //     response.sendFile(basePath + "/index.html")
-            return response.render(views + "profile", {profile: Profile.data})
-        },
-        update(request, response){
-            const data = request.body
-
-            const weeksPerYear = 52
-            const weeksPerMonth = (weeksPerYear - data["vacation-per-year"]) / 12
-            const weekTotalHours = data["hours-per-day"] * data["days-per-week"]
-
-            const monthlyTotalHours = weeksPerMonth * weekTotalHours
-
-            const hourValue = data["monthly-budget"] / monthlyTotalHours
-
-            Profile.data = {
-                ...Profile.data,
-                ...request.body,
-                hourValue
-            }
-            return response.redirect("/profile")
-        }
-    }
 }
 
 const Job = {
@@ -75,7 +48,7 @@ const Job = {
                 }  
             })
     
-            return response.render(views + "index", {jobs:updatedJobs, profile: Profile.data})
+            return response.render("index", {jobs:updatedJobs, profile: Profile.data})
         },
         save(request, response){
             // { name: 'teste', 'daily-hours': '10', 'total-hours': '45' }
@@ -91,7 +64,7 @@ const Job = {
             return response.redirect("/")
         },
         create(request, response){ 
-            return response.render(views + "job")
+            return response.render("job")
         },
         edit(request, response){
 
@@ -104,7 +77,7 @@ const Job = {
 
             job.budget = Job.services.calculateBudget(job, Profile.data.hourValue)
 
-            return response.render(views + "job-edit", {job})
+            return response.render("job-edit", {job})
         },
         update(request, response){
             
