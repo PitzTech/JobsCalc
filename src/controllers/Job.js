@@ -9,14 +9,15 @@ module.exports ={
         // { name: 'teste', 'daily-hours': '10', 'total-hours': '45' }
         const jobId = Number(jobs[jobs.length-1]?.id) + 1 || 1;
         const dayInMs = 24*60*60*1000
-
-        jobs.push({
+        
+        JobData.create({
             id: jobId,
             name: request.body.name,
             dailyHours: request.body["daily-hours"],
             totalHours: request.body["total-hours"],
             createdAt: Date.now() //+ dayInMs
         })
+
         return response.redirect("/")
     },
     create(request, response){ 

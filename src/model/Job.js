@@ -26,5 +26,8 @@ module.exports = {
     },
     delete(id){
         data = data.filter(job => job.id != id)
+    },
+    create(newJob){
+        data.push(newJob)
     }
 }
