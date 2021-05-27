@@ -13,6 +13,14 @@ server.set("views", path.join(__dirname, "views"))
 // Habilitar arquivos estaticos, criar todas as rotas da pasta public
 server.use(express.static("public"))
 
+// Criar Variavel __dirname to EJSOUT <%=
+// const rootPath = path.dirname(__dirname)
+
+// server.use((request, response, next) => { 
+//     response.locals.rootPath = rootPath;
+//     return next();
+// });
+
 // enable req.body Post arguments
 server.use(express.urlencoded({ extended: true}))
 

@@ -1,32 +1,13 @@
 const ProfileData = require("../model/Profile")
-const JobData = require("../model/Job")
-const JobUtils = require("../utils/Job")
+const JobData     = require("../model/Job")
+const JobUtils    = require("../utils/Job")
 
 module.exports ={
-    index(request, response){
-        const jobs = JobData.get()
-        const profile = ProfileData.get()
-
-        const updatedJobs = jobs.map(job => {
-            
-            const remaining = JobUtils.getRemainingDays(job)
-            const status = remaining < 0 ? "done" : "progress"
-    
-            return {
-                ...job,
-                remaining,
-                status,
-                budget: JobUtils.calculateBudget(job, profile.hourValue)
-            }  
-        })
-
-        return response.render("index", {jobs: updatedJobs, profile: profile})
-    },
     save(request, response){
         const jobs = JobData.get()
 
         // { name: 'teste', 'daily-hours': '10', 'total-hours': '45' }
-        const jobId = jobs[jobs.length-1]?.id + 1 || 1;
+        const jobId = Number(jobs[jobs.length-1]?.id) + 1 || 1;
         const dayInMs = 24*60*60*1000
 
         jobs.push({
@@ -34,7 +15,7 @@ module.exports ={
             name: request.body.name,
             dailyHours: request.body["daily-hours"],
             totalHours: request.body["total-hours"],
-            createdAt: Date.now() + dayInMs
+            createdAt: Date.now() //+ dayInMs
         })
         return response.redirect("/")
     },
