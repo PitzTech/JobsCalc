@@ -49,4 +49,4 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.
 
 Feito com ♥ by PitzTech com a tutoria de [Mayk Brito](https://github.com/maykbrito) e [Jakeliny Gracielly](https://github.com/jakeliny) :wave:
 
-<sup>[Rocketseat](rocketseat.com.br)</sup>
+<sup>Apoio da [Rocketseat](rocketseat.com.br)</sup>
