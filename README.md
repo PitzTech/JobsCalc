@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="JobsCalc" title="JobsCalc" src=".github/topImg.png" width="220px" />
+  <a href="https://github.com/PitzTech/JobsCalc"><img alt="JobsCalc" title="JobsCalc" src=".github/topImg.png" width="220px" /></a>
 </h1>
 
 <p align="center">
@@ -50,11 +50,11 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.
 Feito com ♥ by PitzTech com a tutoria de [Mayk Brito](https://github.com/maykbrito) e [Jakeliny Gracielly](https://github.com/jakeliny) :wave:
 
 <p align="center">
-  <img alt="LinkedIn" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white">
+  <a href="https://www.linkedin.com/in/victor-laurentino-do-nascimento/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+  <a href="mailto:victorlaurentino7@gmail.com?subject=Oi%20Victor!%20Vim%20do%20seu%20GitHub"><img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img alt="LinkedIn" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">
+  <a href="https://www.linkedin.com/in/victor-laurentino-do-nascimento/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
 </p>
 
 <sup>Apoio da [Rocketseat](https://discord.com/invite/gCRAFhc)</sup>
