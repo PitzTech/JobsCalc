@@ -49,4 +49,12 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.
 
 Feito com ♥ by PitzTech com a tutoria de [Mayk Brito](https://github.com/maykbrito) e [Jakeliny Gracielly](https://github.com/jakeliny) :wave:
 
+<p align="center">
+  <img alt="LinkedIn" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img alt="LinkedIn" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">
+</p>
+
 <sup>Apoio da [Rocketseat](https://discord.com/invite/gCRAFhc)</sup>
