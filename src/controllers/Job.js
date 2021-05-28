@@ -3,15 +3,11 @@ const JobData     = require("../model/Job")
 const JobUtils    = require("../utils/Job")
 
 module.exports ={
-    save(request, response){
-        const jobs = JobData.get()
-
+    async save(request, response){
         // { name: 'teste', 'daily-hours': '10', 'total-hours': '45' }
-        const jobId = Number(jobs[jobs.length-1]?.id) + 1 || 1;
-        const dayInMs = 24*60*60*1000
+        //const dayInMs = 24*60*60*1000
         
-        JobData.create({
-            id: jobId,
+        await JobData.create({
             name: request.body.name,
             dailyHours: request.body["daily-hours"],
             totalHours: request.body["total-hours"],
@@ -23,9 +19,9 @@ module.exports ={
     create(request, response){ 
         return response.render("job")
     },
-    show(request, response){
-        const jobs = JobData.get()
-        const profile = ProfileData.get()
+    async show(request, response){
+        const jobs = await JobData.get()
+        const profile = await ProfileData.get()
 
         const jobId = request.params.id
 
@@ -38,37 +34,29 @@ module.exports ={
 
         return response.render("job-edit", {job})
     },
-    edit(request, response){
-        const jobs = JobData.get()
+    async edit(request, response){
+        const jobs = await JobData.get()
         
         const jobId = request.params.id
 
-        const job = jobs.find(job => job.id == jobId)
+        // Get and Update the Job
 
         const updatedJob = {
-            ...job,
             name: request.body.name,
             dailyHours: request.body["daily-hours"],
             totalHours: request.body["total-hours"],
         }
 
-        const updatedJobs = jobs.map(job => {
-            if(job.id == jobId)
-                job = updatedJob
-
-            return job
-        })
-
-        JobData.update(updatedJobs)
+        await JobData.update(updatedJob, jobId)
         
         response.redirect("/job/edit/" + jobId)
     },
-    delete(request, response){
-        const jobs = JobData.get()
+    async delete(request, response){
+        const jobs = await JobData.get()
 
         const jobId = request.params.id
 
-        JobData.delete(jobId)
+        await JobData.delete(jobId)
 
         return response.redirect("/")
     }

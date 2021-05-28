@@ -64,10 +64,11 @@
         <h1 class="sr-only">Trabalhos</h1>
 
         <div class="cards">
-
+          <% let cardCount = 0 %> 
           <% jobs.forEach(job => { %>
-            <div class="card <%= job.status %>" data-id="<%= job.id %>">
-              <div class="id column"><%= job.id %> </div>
+            <% cardCount++ %> 
+            <div class="card <%= job.status %>" data-id="<%= cardCount %>">
+              <div class="id column"><%= cardCount %> </div>
               <div class="name column">
                 <%= job.name %> 
               </div>
